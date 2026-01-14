@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: url("https://t3.ftcdn.net/jpg/02/52/12/40/360_F_252124067_aCtp9ZD934RboKmjJzkXiwYDL7XkNjpn.jpg") center / cover no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+}
+
+/* Section */
+.team {
+    padding: 60px 20px 100px;
+    text-align: center;
+}
+
+/* Header */
+.team-header h1 {
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    font-size: 25px;
+}
+
+.team-header span {
+    color: #f4b400;
+
+}
+
+.team-header p {
+    max-width: 600px;
+    margin: 10px auto 40px;
+    color: #555;
+}
+
+/* Grid */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.chef-card {
+    width: 300px;
+    position: relative;
+}
+
+/* Image */
+.chef-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+/* White floating box */
+.chef-info {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    background: #fff;
+    padding: 15px 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Text */
+.chef-info h5 {
+    color: #555;
+}
+
+.chef-info h6 {
+    color: #888;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Divider */
+.line {
+    display: block;
+    width: 45px;
+    height: 2px;
+    background: #f4b400;
+    margin: 8px auto;
+}
+
+/* Social icons */
+.socials {
+    margin-top: 10px;
+}
+
+.socials i {
+    margin: 0 6px;
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.socials i:hover {
+    color: #000;
+}
